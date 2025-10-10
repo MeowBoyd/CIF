@@ -1,0 +1,41 @@
+print("Slay Coffee!")
+print("- Quality coffee for low prices -")
+#introduction to our shop!
+menu_list=["1. Black coffee 1.50$","2. Matcha latte 3$","3. Pumpkin spice latte 4.50$","4. Hot chocolate 2$","5. Iced cappuccino 3$"]
+menu=["black coffee","matcha latte","pumpkin spice latte","hot chocolate","iced cappuccino"]
+#lists for menu items, the second menu list is just for the end/receipt, but i didnt even use it :O
+total=0
+#total money is 0 cuz we haven't started buying anything yet.
+buy_again="yes"
+#buy_again variable allows us to see when the user is buying again or no. Since we want them to buy, buy_again is default set to yes.
+for x in menu_list:
+    print(x)
+#for loop allows for polished and fast printing of a list.
+price_list=["1.50","3","4.50","2","3"]
+#prices!
+#down below you see a while loop, which means that when buy_again is yes, the program will carry out procedures for buying.
+while buy_again=="yes":
+    order_number=int(input("Type in the item number of your order (1-5)"))
+    #you input the order number
+    amount=int(input("How many items would you like?"))
+    # you input the amount
+    order=(menu[order_number-1])
+    #use indexing to find the item you want to buy from the menu list
+    price=float(price_list[order_number-1])
+    # and similarly find the price using order_number variable
+    buy_again=str(input("Do you want to buy again? yes/no - "))
+    #after all procedures are carried out properly, we reset the variable buy_again by asking if the user wants to buy again
+    #if yes, we repeat the above steps
+    #if no, we move on
+    total=amount*price+total
+    #we also calculate the total price now that we've gotten something
+discount=str(input("Do you have a discount coupon? yes/no - "))
+#discount! Hope customer doesn't lie.
+if discount=="yes":
+    total=total*0.85
+    #if they have the coupon, we can apply the 15% discount!
+    print("Nice! You have used your Slay Coffee coupon.")
+print("You have successfully purchased your item(s) for",total,"$.")
+#this is oyur receipt, it shows you what your total price is
+print("Have a nice day!")
+#polite=good 
