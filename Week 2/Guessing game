@@ -1,0 +1,11 @@
+from random import randint
+play_again="yes"
+while play_again=="yes":
+    number=randint(1,10)
+    answer=int(input("Guess a number between 1 and 10."))
+    if answer==number:
+        print("OMG U WON!!")
+    else:
+        print("Oops that's wrong.")
+    print("The number was",number)
+    play_again=str(input("Do you wanna play again?"))
