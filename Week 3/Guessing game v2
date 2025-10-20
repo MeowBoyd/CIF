@@ -7,7 +7,7 @@ number=randint(low,high)
 while play_again=="yes":
     answer=int(input("Guess a number between the range given."))
     if answer==number:
-        print("OMG U WON!!")
+        print("You won!!")
         play_again="no"
     else:
         if answer>number:
