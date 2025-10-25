@@ -3,6 +3,8 @@ CIF (Coding is Fun) is a nonprofit organization which provides free coding class
 
 Lesson groups are split into three levels: beginner, junior, and senior.
 
+For junior class, we will be creating a myriad of projects (which will be uploaded on Github) and we will write articles on Medium (find Jessica Chen).
+
 # Project 1
 We are working on our first project, a number guessing game in Python. In this project, we explore the following:
 - Random library (randint function)
