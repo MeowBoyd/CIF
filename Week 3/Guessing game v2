@@ -4,7 +4,7 @@ high=int(input("Please input the highest possible number of your range. (25 is r
 print("Your range is (",low,",",high,")")
 play_again="yes"
 number=randint(low,high)
-attempts=3
+attempts=5
 while play_again=="yes" and attempts>0:
     answer=int(input("Guess a number between the range given."))
     attempts=attempts-1
