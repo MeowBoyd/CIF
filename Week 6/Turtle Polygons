@@ -1,0 +1,7 @@
+sides=int(input("How many sides would you like your polygin to have?"))
+length=int(input("How long should each side be?"))
+import turtle
+turtle.shape("turtle")
+for i in range (sides):
+    turtle.forward(length)
+    turtle.right(180-(sides-2)*180/sides)
