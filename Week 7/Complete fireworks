@@ -1,0 +1,50 @@
+import turtle
+import random
+t = turtle.Turtle()
+t.shape("turtle")
+s = turtle.Screen()
+s.bgcolor("black") 
+t.penup() 
+t.goto(200,-200)
+t.pendown()
+t.shapesize(1)
+t.color("red")
+t.begin_fill()
+for i in range(2):
+    t.forward(20)
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+t.end_fill()
+t.color("white")
+t.shape("circle")
+t.penup()
+t.forward(10)
+t.pendown()
+t.speed(9)
+t.left(90)
+for i in range(30): 
+    t.forward(9)
+    t.left(1)
+for i in range(30):
+    t.forward(8)
+    t.left(2)
+t.speed(0)
+colors = ["red", "yellow", "orange"]
+def draw_square(size, color):
+    t.color(color)
+    for _ in range(4):
+        t.forward(size)
+        t.right(90)
+def illusion_firework(x,y):
+    t.penup()
+    t.goto(-53.29,176.47)
+    t.pendown()
+    for angle in range(0, 360, 15):  # rotate squares every 15 degrees
+        t.penup()
+        t.goto(-53.29,176.47)
+        t.pendown()
+        t.setheading(angle)
+        draw_square(100, random.choice(colors))
+illusion_firework(0, 0)
+turtle.done()
