@@ -13,3 +13,15 @@ We are working on our first project, a number guessing game in Python. In this p
 - creating flowcharts to help with the game layout
 
 You can see my process of creating the game in my folders Week 2 and Week 3. We will be working on many different projects throughout the junior course, so stay tuned for any updates!
+
+# Project 2
+After finishing our awesome number games, we moved on to creating a text-based adventure game, which we will refer to as a TBAG.
+
+My idea for the game was somewhat like a math quiz, where you were supposed to answer math questions, and you would "pass" if your score was above some amount. During this project, we had fun learning about each others' ideas and more technical things, such as :
+- 2D-lists
+- using functions
+
+I think my game turned out pretty good, and you can check out the full game in my Week 5 folder.
+
+# Project 3
+For our third project, we worked on the Turtle module.
