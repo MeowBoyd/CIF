@@ -40,7 +40,8 @@ def illusion_firework(x,y):
     t.penup()
     t.goto(-53.29,176.47)
     t.pendown()
-    for angle in range(0, 360, 15):  # rotate squares every 15 degrees
+    for angle in range(0, 360, 15):     
+    # we rotate the squares every 15 degrees
         t.penup()
         t.goto(-53.29,176.47)
         t.pendown()
