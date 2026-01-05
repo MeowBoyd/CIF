@@ -1,1 +1,44 @@
-
+def rules():
+    print("Welcome to the Math Quiz!")
+    print("Instructions:")
+    print("1. In this game, you will answer 10 simple math questions (please only use integers).")
+    print("2. Press enter when you want to submit your answer.")
+    print("3. If you answer correctly, you get a point. Otherwise, you get no point.")
+    print("4. You win if you get more than 6 points.")
+    print("Good luck! \n")
+rules()
+#printing out the rulesss!
+quiz = [
+    ("What is 7 + 5?", 12),
+    ("What is 9 - 4?", 5),
+    ("What is 6 × 3?", 18),
+    ("What is 15 ÷ 3?", 5),
+    ("How many days are in a week?", 7),
+    ("How many faces does a cube have?", 6),
+    ("What is the square of 7?", 49),
+    ("What is the measure of a right angle?", 90),
+    ("If x is 2, what is the value of x + 9?", 11),
+    ("(harder) How many factors does 72 have?", 12)
+]
+#2d list containing all the questions and answers
+score = 0
+#we set the score
+for question, answer in quiz:
+    print(question)
+    #printing out each question, and keeping the answer tracked to later see if they match
+    user = input("Answer: ")
+    #user's answer
+    if int(user) == answer:
+        print("Correct!\n")
+        score += 1
+        #basically the answer-checking mechanism
+    else:
+        print(f"We dont talk abt that lol. The correct answer was {answer}.\n")
+        #if you get a question wrong, I shame you
+if score > 6:
+    print("You win!")
+else:
+    print("You lose!")
+#checking if you won or lost, with a cutoff line
+print(f"Your final score was {score}/10")
+#shows you your final score too!!
