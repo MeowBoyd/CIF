@@ -1,0 +1,9 @@
+weather = [
+    ["Sunday",[9, 3, "sunny"]]
+    ["Monday",[10, 7, "rain"]],
+    ["Tuesday", [12, 6, "partly sunny"]],
+    ["Wednesday",[11, 4, "rain"]],
+    ["Thursday",[8, 4, "partly sunny"]],
+    ["Friday",[11, 8, "rain"]],  
+    ["Saturday",[10, 8, "rain"]], 
+]
