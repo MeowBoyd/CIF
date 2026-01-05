@@ -1,1 +1,9 @@
-
+def rules():
+    print("Welcome to the Math Quiz!")
+    print("Instructions:")
+    print("1. In this game, you will answer 10 simple math questions.")
+    print("2. Press enter when you want to submit your answer.")
+    print("3. If you answer correctly, you get a point. Otherwise, you get no point.")
+    print("4. You win if you get more than 6 points.")
+    print("Good luck! \n")
+rules()
